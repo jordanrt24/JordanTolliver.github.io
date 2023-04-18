@@ -7,6 +7,14 @@
       console.log("Hello, world!");
       var myVariable = "dog";
       document.write(myVariable);
+      function changeDocumentContent() {
+        document.getElementById("changeMe").innerHTML = "Document content changed!";
+      }
+    <form>
+      <input type = "button" value = "Click me!" onclick = "changeDocumentContent()">
+    </form>
+    <div id = "changeMe">
+    </div>
     </script>
     </body>
   </html>
