@@ -1,4 +1,4 @@
-class Car {
+class Car{
     constructor(make, model, year, color, mileage, isRunning) {
       this.make = make;
       this.model = model;
