@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="realObject.js"></script>
-    <title>Car Model</title>
-  </head>
-  <body>
-    <h1>Car Model</h1>
-    <p>Make: <span id="make"></span></p>
-    <p>Model: <span id="model"></span></p>
-    <p>Year: <span id="year"></span></p>
-    <p>Color: <span id="color"></span></p>
-    <p>Mileage: <span id="mileage"></span></p>
-    <p>Is Running: <span id="is-running"></span></p>
-    <button onclick="myCar.start()">Start Car</button>
-    <button onclick="myCar.stopCar()">Stop Car</button>
-    <button onclick="myCar.driveCar(4)">Drive Car</button>
-    <button onclick="myCar.paintCar('red')">Paint Car</button>
-    <button onclick="myCar.getMileage('mileage').innerHTML = myCar.getMileage()">Get Mileage</button>
-    <button onclick="myCar.getColor('color').innerHTML = myCar.getColor()">Get Color</button>
-    <script>
-      const makeElem = document.getElementById("make");
-      makeElem.style.fontWeight = "bold";
-      const modelElem = document.getElementById("model");
-      const yearElem = document.getElementById("year");
-      const colorElem = document.getElementById("color");
-      colorElem.style.fontStyle = "italic";
-      const mileageElem = document;
-    </script>
-  </body>
-</html>
+
+<head>
+  <script src="realObject.js"></script>
+  <title>Car Model</title>
+</head>
+
+<body>
+  <h1>Car Model</h1>
+  <p>Make: <span id="make"></span></p>
+  <p>Model: <span id="model"></span></p>
+  <p>Year: <span id="year"></span></p>
+  <p>Color: <span id="color"></span></p>
+  <p>Mileage: <span id="mileage"></span></p>
+  <p>Is Running: <span id="is-running"></span></p>
+  <button onclick="myCar.start()">Start Car</button>
+  <button onclick="myCar.stop()">Stop Car</button>
+  <button onclick="myCar.drive(4)">Drive Car</button>
+  <button onclick="myCar.paint('red')">Paint Car</button>
+  <button onclick="document.getElementById('mileage').innerHTML = myCar.getMileage()">Get Mileage</button>
+  <button onclick="document.getElementById('color').innerHTML = myCar.getColor()">Get Color</button>
+  <script>
+    const makeElem = document.getElementById("make");
+    makeElem.style.fontWeight = "bold";
+    const modelElem = document.getElementById("model");
+    const yearElem = document.getElementById("year");
+    const colorElem = document.getElementById("color");
+    colorElem.style.fontStyle = "italic";
+    const mileageElem = document;
+  </script>
