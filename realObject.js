@@ -10,34 +10,34 @@ class Car{
   
     start() {
       if (this.isRunning) {
-        console.log(`The ${this.make} ${this.model} is already running.`);
+        return(`The ${this.make} ${this.model} is already running.`);
       } else {
         this.isRunning = true;
-        console.log(`Starting the ${this.make} ${this.model}...`);
+        return(`Starting the ${this.make} ${this.model}...`);
       }
     }
   
     stop() {
       if (this.isRunning) {
         this.isRunning = false;
-        console.log(`Stopping the ${this.make} ${this.model}...`);
+        return(`Stopping the ${this.make} ${this.model}...`);
       } else {
-        console.log(`The ${this.make} ${this.model} is already stopped.`);
+        return(`The ${this.make} ${this.model} is already stopped.`);
       }
     }
   
     drive(distance) {
       if (this.isRunning) {
         this.mileage += distance;
-        console.log(`Driving the ${this.make} ${this.model} for ${distance} miles...`);
-        console.log(`Current mileage: ${this.mileage}`);
+        return(`Driving the ${this.make} ${this.model} for ${distance} miles...`);
+        return(`Current mileage: ${this.mileage}`);
       } else {
-        console.log(`The ${this.make} ${this.model} needs to be started before you can drive it.`);
+        return(`The ${this.make} ${this.model} needs to be started before you can drive it.`);
       }
     }
   
     paint(newColor) {
-      console.log(`Painting the ${this.make} ${this.model} ${newColor}...`);
+      return(`Painting the ${this.make} ${this.model} ${newColor}...`);
       this.color = newColor;
     }
   
