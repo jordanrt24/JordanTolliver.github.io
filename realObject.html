@@ -8,12 +8,12 @@
 
 <body>
   <h1>Car Model</h1>
-  <p>Make: <span id="make"></span></p>
-  <p>Model: <span id="model"></span></p>
-  <p>Year: <span id="year"></span></p>
+  <p>Make: <span id="start"></span></p>
+  <p>Model: <span id="stop"></span></p>
+  <p>Year: <span id="drive"></span></p>
   <p>Color: <span id="color"></span></p>
   <p>Mileage: <span id="mileage"></span></p>
-  <p>Is Running: <span id="is-running"></span></p>
+  <p>Is Running: <span id="paint"></span></p>
   <button onclick="document.getElementById('start').innerHTML = myCar.start()">Start Car</button>
   <button onclick="document.getElementById('stop').innerHTML = myCar.stop()">Stop Car</button>
   <button onclick="document.getElementById('drive').innerHTML = myCar.drive(4)">Drive Car</button>
@@ -29,20 +29,21 @@
     colorElem.style.fontStyle = "italic";
     const mileageElem = document;
   </script>
-  
+
   <button id="myBtn">Cars</button>
   <script>
     var x = document.getElementById("myBtn");
     x.addEventListener("click", myFunction);
     x.addEventListener("click", someOtherFunction);
-    
+
     function myFunction() {
-      alert ("Vroom...Vroom...");
+      alert("Vroom...Vroom...");
     }
-    
+
     function someOtherFunction() {
-      alert ("Nice Car!");
+      alert("Nice Car!");
     }
-    </script>
-  </body>
-  </html>
+  </script>
+</body>
+
+</html>
