@@ -14,10 +14,10 @@
   <p>Color: <span id="color"></span></p>
   <p>Mileage: <span id="mileage"></span></p>
   <p>Is Running: <span id="is-running"></span></p>
-  <button onclick="myCar.start()">Start Car</button>
-  <button onclick="myCar.stop()">Stop Car</button>
-  <button onclick="myCar.drive(4)">Drive Car</button>
-  <button onclick="myCar.paint('red')">Paint Car</button>
+  <button onclick="document.getElementById('start').innerHTML = myCar.start()">Start Car</button>
+  <button onclick="document.getElementById('stop').innerHTML = myCar.stop()">Stop Car</button>
+  <button onclick="document.getElementById('drive').innerHTML = myCar.drive(4)">Drive Car</button>
+  <button onclick="document.getElementById('paint').innerHTML = myCar.paint('red')">Paint Car</button>
   <button onclick="document.getElementById('mileage').innerHTML = myCar.getMileage()">Get Mileage</button>
   <button onclick="document.getElementById('color').innerHTML = myCar.getColor()">Get Color</button>
   <script>
