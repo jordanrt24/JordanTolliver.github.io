@@ -1,0 +1,86 @@
+* {
+	font-family: Arial;
+}
+.wrapper {
+	display: none;
+	width: 100%;
+	margin: auto;
+	justify-content: space-around;
+	background: rgba(0, 255, 4, 0.108);
+}
+.options {
+	display: flex;
+	width: 30%;
+	flex-flow: column;
+	align-items: center;
+}
+.section {
+	width: 100%;
+	background: rgba(0, 0, 255, 0.322);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding: 5px 0px 5px 0px;
+	border: 1px solid rgb(0, 0, 0);
+	height: 10vh;
+	padding: 0px 10px 0px 10px;
+}
+.section div,
+span {
+	padding: 3px;
+}
+span {
+	text-shadow: 1px #000;
+	font-weight: bold;
+	text-align: right;
+}
+.hotdog {
+	width: 100%;
+}
+.info {
+	text-align: center;
+	display: flex;
+	width: 40%;
+	margin: auto;
+	justify-content: space-between;
+}
+.hotdog-text {
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.hotdog-section {
+	width: 25%;
+	height: auto;
+	background: blue;
+}
+.upset {
+	color: blue;
+	font-size: 18px;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.highlight {
+	font-size: 18px;
+	color: yellow;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+}
+#myCanvas {
+	border: 1px solid black;
+	width: 100%;
+	height: 30vh;
+	background: rgba(255, 0, 0, 0.349);
+}
+body {
+	margin: 0px 0px 20px 0px;
+}
+.canvasSection {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+.canvasSection button {
+	height: 5vh;
+}
