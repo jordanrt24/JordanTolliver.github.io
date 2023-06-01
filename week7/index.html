@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<link>
+<title>Jordan's Page</title>
+<link rel="stylesheet" href="objectReact.css">
+</link>
+</head>
+
+<body>
+  <h1>Hotdog Selector</h1>
+  <form onsubmit="updateFunction();return false" action="#" name="myForm" onsubmit="updateFunction()">
+    <label for="Condition">Condition:</label>
+    <input type="text" name="Condition" id="Condition" value="new" required>
+    <label for="Temperature">Temperature (F°):</label>
+    <input type="text" name="Temperature" id="Temperature" value="75" required>
+    <label for="Length">Length (cm):</label>
+    <input type="text" name="Length" id="Length" value="13" required>
+    <label for="Condiments">Condiments:</label>
+    <input type="text" name="Condiments" id="Condiments" value="mustard" required>
+    <label for="Bread">Bread:</label>
+    <input type="text" name="Bread" id="Bread" value="whole-wheat" required>
+    <label for="Meat">Meat:</label>
+    <input type="text" name="Meat" id="Meat" value="turkey" required>
+    <input type="submit" value="Submit" />
+  </form>
+  <h3> My name is Jordan, and to name a few things about myself,
+    I play football and tennis, I have a predilection for math,
+    and I enjoy utilizing technology and aspire to be a part of changing the future! </h3>
+  <div class="info">
+    <h4>Click on the blue boxes to <span class="highlight">highlight</span></h4>
+    <h4>Click on the hotdog to <span class="upset">upset</span> him</h4>
+  </div>
+  <hr>
+  <div class="wrapper">
+    <div class="options">
+      <div class="section" id="section">
+        <div>Condition: </div>
+        <span id="condition"></span>
+      </div>
+      <div class="section">
+        <div>Temperature: </div>
+        <span id="temperature"></span>
+      </div>
+      <div class="section">
+        <div>Cooling Time: </div>
+        <span id="coolingTime"></span>
+      </div>
+      <div class="section">
+        <div>Length (cm): </div>
+        <span id="length"></span>
+      </div>
+      <div class="section">
+        <div>Consumption Time:</div>
+        <span id="eatingTime"></span>
+      </div>
+      <div class="section">
+        <div>Condiments: </div>
+        <span id="condiments"></span>
+      </div>
+      <div class="section">
+        <div>Bread: </div>
+        <span id="bread"></span>
+      </div>
+      <div class="section">
+        <div>Meat: </div>
+        <span id="meat"></span>
+      </div>
+    </div>
+
+    <div class="canvasSection">
+      <canvas id="myCanvas"></canvas>
+      <button id="canvasButton">Click here to start</button>
+    </div>
+    <div class="hotdog-section">
+      <img class="hotdog" src="hotdog.jpg">
+      <div class="hotdog-text"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script src="index.js"></script>
